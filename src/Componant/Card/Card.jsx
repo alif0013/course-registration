@@ -14,7 +14,15 @@ const Card = ({ card }) => {
                 <div className="card-body items-center text-center">
                     <h2 className="card-title">{title}</h2>
                     <p className="text-slate-500 text-[14px]">{description}</p>
-                  
+                  <div className="flex w-[260px] mb-2 justify-evenly">
+                    <div>
+                        <p>Price:${price}</p>
+                    </div>
+                    <div>
+                        <p>credit: {credit}hr</p>
+                    </div>
+                  </div>
+
                     <div className="card-actions">
                         <button className="btn px-16 btn-primary">Select</button>
                     </div>
