@@ -1,9 +1,8 @@
 
 
-const Card = ({ card }) => {
-    const { id, image, title, description, price, credit } = card;
-    console.log(card);
-
+const Card = ({ card, handCoursesBtn }) => {
+    const { image, title, description, price, credit } = card;
+    
 
     return (
         <div>
@@ -16,7 +15,7 @@ const Card = ({ card }) => {
                     <p className="text-slate-500 text-[14px]">{description}</p>
                   <div className="flex w-[260px] mb-2 justify-evenly">
                     <div>
-                        <p>Price:${price}</p>
+                        <p>Price: ${price}</p>
                     </div>
                     <div>
                         <p>credit: {credit}hr</p>
@@ -24,7 +23,7 @@ const Card = ({ card }) => {
                   </div>
 
                     <div className="card-actions">
-                        <button className="btn px-16 btn-primary">Select</button>
+                        <button onClick={ () => handCoursesBtn(card)} className="btn px-16 btn-primary">Select</button>
                     </div>
                 </div>
             </div>
