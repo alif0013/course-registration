@@ -5,12 +5,13 @@ const Cart = ({ course }) => {
     return (
 
         <>
-        
+
 
 
             <div>
 
-                {title}
+                <li>{title}</li>
+               
 
             </div>
 
