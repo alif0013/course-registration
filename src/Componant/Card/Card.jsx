@@ -1,8 +1,8 @@
 
-
+import {BsBook} from 'react-icons/bs';
+import {FiDollarSign} from 'react-icons/fi';
 const Card = ({ card, handCoursesBtn }) => {
     const { image, title, description, price, credit } = card;
-    
 
     return (
         <div>
@@ -13,17 +13,19 @@ const Card = ({ card, handCoursesBtn }) => {
                 <div className="card-body items-center text-center">
                     <h2 className="card-title">{title}</h2>
                     <p className="text-slate-500 text-[14px]">{description}</p>
-                  <div className="flex w-[260px] mb-2 justify-evenly">
-                    <div>
-                        <p>Price: ${price}</p>
+                    <div className="flex w-[260px] mb-2 justify-evenly">
+                        <div className='flex'>
+                          <FiDollarSign className='mt-1'></FiDollarSign>
+                            <p className='pl-2'>Price: {price}</p>
+                        </div>
+                        <div className='flex'>
+                            <BsBook className='mt-1'></BsBook>
+                            <p  className='pl-2'>credit: {credit}hr</p>
+                        </div>
                     </div>
-                    <div>
-                        <p>credit: {credit}hr</p>
-                    </div>
-                  </div>
 
                     <div className="card-actions">
-                        <button onClick={ () => handCoursesBtn(card)} className="btn px-16 btn-primary">Select</button>
+                        <button onClick={() => handCoursesBtn(card)} className="btn px-16 btn-primary">Select</button>
                     </div>
                 </div>
             </div>
