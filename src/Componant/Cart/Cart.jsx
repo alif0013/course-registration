@@ -5,16 +5,11 @@ const Cart = ({ course }) => {
     return (
 
         <>
-
-
-
             <div>
 
                 <li>{title}</li>
                
-
             </div>
-
         </>
     );
 };

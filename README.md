@@ -32,3 +32,7 @@ likesetCourses([...courses, course]);   (course is a single data recivier of car
 
 10. The i go to app.jsx file and creat 2 useState named remaining and totalcredit hour for handling the dynamic calculation in carts componant. Here i send data by props drilling method and recive the data and destructure the object in carts and cart componant.
 
+11. I apply the all condition and validation in app.jsx file in fullfill all the requirement .
+
+
+ [Note: Dear Sir, I am not comfort to write in english. Sorry For the mistakes]

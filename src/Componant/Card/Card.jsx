@@ -1,6 +1,6 @@
 
-import {BsBook} from 'react-icons/bs';
-import {FiDollarSign} from 'react-icons/fi';
+import { BsBook } from 'react-icons/bs';
+import { FiDollarSign } from 'react-icons/fi';
 const Card = ({ card, handCoursesBtn }) => {
     const { image, title, description, price, credit } = card;
 
@@ -15,12 +15,12 @@ const Card = ({ card, handCoursesBtn }) => {
                     <p className="text-slate-500 text-[14px]">{description}</p>
                     <div className="flex w-[260px] mb-2 justify-evenly">
                         <div className='flex'>
-                          <FiDollarSign className='mt-1'></FiDollarSign>
+                            <FiDollarSign className='mt-1'></FiDollarSign>
                             <p className='pl-2'>Price: {price}</p>
                         </div>
                         <div className='flex'>
                             <BsBook className='mt-1'></BsBook>
-                            <p  className='pl-2'>credit: {credit}hr</p>
+                            <p className='pl-2'>credit: {credit}hr</p>
                         </div>
                     </div>
 

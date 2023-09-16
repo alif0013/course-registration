@@ -68,8 +68,6 @@ function App() {
         <Carts key={courses.id} courses={courses} remaining={remaining} totalCredit={totalCredit}></Carts>
       </div>
 
-
-
     </>
   )
 }
